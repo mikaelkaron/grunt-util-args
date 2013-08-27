@@ -9,6 +9,7 @@
 module.exports = function(grunt) {
 	"use strict";
 
+	var UNDEFINED;
 	var _ = grunt.util._;
 
 	return function () {
@@ -17,7 +18,11 @@ module.exports = function(grunt) {
 		var result = {};
 
 		_.forEach(arguments, function (key, index) {
-			result[key] = args[index];
+			var value = args[index];
+
+			result[key] = value === ""
+				? UNDEFINED
+				: value;
 		});
 
 		return result;
