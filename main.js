@@ -18,11 +18,13 @@ module.exports = function(grunt) {
 		var result = {};
 
 		_.forEach(arguments, function (key, index) {
-			var value = args[index];
+			var value;
 
-			result[key] = value === ""
-				? UNDEFINED
-				: value;
+			if (!_.isEmpty(key)) {
+				result[key] = (value = args[index]) === ""
+					? UNDEFINED
+					: value;
+			}
 		});
 
 		return result;
