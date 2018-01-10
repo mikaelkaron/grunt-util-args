@@ -25,8 +25,14 @@
 			"url": "http://mikael.mit-license.org/"
 		}
 	],
+	"scripts": {
+		"release": "standard-version"
+	},
 	"main": "main.js",
 	"peerDependencies": {
 		"grunt": "~0.4.1"
+	},
+	"devDependencies": {
+		"standard-version": "^4.3.0"
 	}
 }
