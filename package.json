@@ -30,7 +30,7 @@
   },
   "main": "main.js",
   "peerDependencies": {
-    "grunt": "~0.4.1"
+    "grunt": ">= 0.4.1"
   },
   "devDependencies": {
     "standard-version": "^4.3.0"
