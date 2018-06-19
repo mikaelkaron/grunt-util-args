@@ -1,7 +1,7 @@
 {
   "name": "grunt-util-args",
   "description": "Grunt util for extracting arguments",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "author": {
     "name": "Mikael Karon",
     "email": "mikael@karon.se"
